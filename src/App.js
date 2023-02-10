@@ -444,8 +444,8 @@ const ModalFire =
                 </defs>
 
                 <circle cx="100" cy="100" r="50"  fill="red" onClick={()=>setSymbolList([])}/>
-                <circle cx="100" cy="100" r="43"  fill="none" stroke="white" strokeWidth="2"/>
-                <text x="80" y= "105" fill='white' style={{fontSize:'18px',}}>Reset</text>
+                <circle cx="100" cy="100" r="43"  fill="none" stroke="white" strokeWidth="2" onClick={()=>setSymbolList([])}/>
+                <text x="80" y= "105" fill='white' style={{fontSize:'18px',}} onClick={()=>setSymbolList([])}>Reset</text>
 
 
 
