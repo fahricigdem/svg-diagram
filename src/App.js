@@ -235,7 +235,7 @@ const ModalFire =
                     </g>
                 )
     })  
-
+console.log("++++++++++++++++++++++>>>>>>>>>>>>>", modalX, modalY)
 //     const Lines = symbolList.map(symbol => {
    
 //         symbol.childs?.map(
@@ -285,14 +285,18 @@ const ModalFire =
 
           if(e.clientX == posXFirst && e.clientY == posYFirst)
           {
+            var x = e.clientX;
+            var y = e.clientY;
+            if(x > 150 && x < window.innerWidth - 150) setModalX(x);
+            else if(x > window.innerWidth - 150) setModalX(window.innerWidth - 150);
+            else setModalX(150);
+            
+            if(y > 150 && y < window.innerHeight - 150) setModalY(y);
+            else if(y > window.innerHeight - 150) setModalY(window.innerHeight - 150);
+            else setModalY(150);
+            
             setShow(true); 
             setModal("fire");
-            
-            setModalX(Math.round(e.clientX)); 
-            setModalY(Math.round(e.clientY));
-            
-            if(modalX < 150) setModalX(150);
-            if(modalY < 150) setModalY(150);
             
           }
           else{
