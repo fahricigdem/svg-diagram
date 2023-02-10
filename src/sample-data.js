@@ -42,7 +42,7 @@ export const SampleData = [
         ],
         "posX": 711,
         "posY": 337,
-        "text": ""
+        "text": "Zwq"
     },
     {
         "Id": 5,
@@ -51,7 +51,7 @@ export const SampleData = [
         "childs": [],
         "posX": 103,
         "posY": 567,
-        "text": ""
+        "text": "vow!"
     },
     {
         "Id": 6,
@@ -60,7 +60,7 @@ export const SampleData = [
         "childs": [],
         "posX": 329,
         "posY": 566,
-        "text": ""
+        "text": "aua!"
     },
     {
         "Id": 7,
